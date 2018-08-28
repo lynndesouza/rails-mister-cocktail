@@ -37,5 +37,8 @@
   </div>
 
 <div class="col-sm-12 col-md-6">
-      <i class="fa fa-trash destroy_dose"></i> <%= link_to "Delete this cocktail", method: :delete, data: { confirm: "Are you sure?" } %>
-    </div>
+      <p>Delete this cocktail:</p>
+      <%= link_to cocktail_path, method: :delete, data: { confirm: "Are you sure?" } do %>
+        <i class="fa fa-trash destroy_dose"></i>
+        <% end %>
+</div>
